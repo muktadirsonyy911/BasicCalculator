@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,103 +10,334 @@ class BasicCalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: Text(
-            "Basic Calculator",
-            style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 25,
-                fontFamily: 'Times New Roman'),
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.black,
+            title: Text(
+              "Basic Calculator",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                  fontFamily: 'Times New Roman'),
+            ),
+            centerTitle: true,
           ),
-          centerTitle: true,
-        ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      color: Colors.pink,
-                      child: Text(
-                        "1",
-                        style: TextStyle(
-                            fontSize: 36,
-                            fontStyle: FontStyle.italic,
-                            color: Colors.amber),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Expanded(
+                flex: 2,
+                child: Row(
+
+                ),
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "1",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
                       ),
                     ),
-                  )
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      color: Colors.lightBlue,
-                      child: Text(
-                        "2",
-                        style: TextStyle(
-                            fontSize: 36,
-                            fontStyle: FontStyle.italic,
-                            color: Colors.amber),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "2",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
                       ),
                     ),
-                  )
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Container(
-                    child: Text(
-                      "Hello",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontStyle: FontStyle.italic,
-                          color: Colors.amber),
+                    SizedBox(
+                      width: 1,
                     ),
-                  )
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Container(
-                    child: Text(
-                      "Hello",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontStyle: FontStyle.italic,
-                          color: Colors.amber),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "3",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
                     ),
-                  )
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                children: [
-                  Container(
-                    child: Text(
-                      "Hello",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontStyle: FontStyle.italic,
-                          color: Colors.amber),
+                    SizedBox(
+                      width: 1,
                     ),
-                  )
-                ],
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "+",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    )
+                  ],
+                ),
               ),
-            ),
-          ],
+              SizedBox(
+                height: 1,
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "4",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "5",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "6",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "-",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 1,
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "7",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "8",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "9",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "x",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 1,
+              ),
+              Expanded(
+                child: Row(
+                  children: [
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "0",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "C",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "=",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    ),
+                    Expanded(
+                      child: Container(
+                        color: Colors.black,
+                        alignment: Alignment.center,
+                        child: Text(
+                          "/",
+                          style: TextStyle(
+                              fontSize: 36,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 1,
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 1,
+              )
+            ],
+          ),
         ),
       ),
     );
