@@ -21,6 +21,92 @@ class BasicCalculator extends StatelessWidget {
           ),
           centerTitle: true,
         ),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Colors.pink,
+                      child: Text(
+                        "1",
+                        style: TextStyle(
+                            fontSize: 36,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.amber),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Colors.lightBlue,
+                      child: Text(
+                        "2",
+                        style: TextStyle(
+                            fontSize: 36,
+                            fontStyle: FontStyle.italic,
+                            color: Colors.amber),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      "Hello",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.amber),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      "Hello",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.amber),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      "Hello",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontStyle: FontStyle.italic,
+                          color: Colors.amber),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
