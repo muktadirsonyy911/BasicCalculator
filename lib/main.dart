@@ -29,6 +29,17 @@ class BasicCalculator extends StatelessWidget {
               Expanded(
                 flex: 2,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text("12 + 5 ", style: TextStyle(fontSize: 36),),
+                        Text(" = 17", style: TextStyle(fontSize: 36),),
+
+                      ],
+                    )
+                  ],
 
                 ),
               ),
